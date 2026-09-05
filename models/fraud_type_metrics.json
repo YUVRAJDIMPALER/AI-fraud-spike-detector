@@ -1,0 +1,93 @@
+{
+  "label": "Fraud Type Classifier",
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "accuracy": 0.8,
+  "confusion_matrix": [
+    [
+      5,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      8,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      9,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5
+    ]
+  ],
+  "classification_report": {
+    "A": {
+      "precision": 1.0,
+      "recall": 0.5555555555555556,
+      "f1-score": 0.7142857142857143,
+      "support": 9.0
+    },
+    "B": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    },
+    "C": {
+      "precision": 0.6,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.6923076923076923,
+      "support": 11.0
+    },
+    "D": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "E": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "accuracy": 0.8,
+    "macro avg": {
+      "precision": 0.8800000000000001,
+      "recall": 0.8347474747474749,
+      "f1-score": 0.8413186813186814,
+      "support": 40.0
+    },
+    "weighted avg": {
+      "precision": 0.8400000000000001,
+      "recall": 0.8,
+      "f1-score": 0.8010989010989011,
+      "support": 40.0
+    }
+  }
+}

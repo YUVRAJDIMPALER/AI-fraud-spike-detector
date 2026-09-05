@@ -1,0 +1,236 @@
+{
+  "default": "xgboost",
+  "models": {
+    "random_forest": {
+      "label": "Random Forest",
+      "accuracy": 0.9195,
+      "fraud_precision": 0.8333,
+      "fraud_recall": 0.875,
+      "fraud_f1": 0.8537,
+      "genuine_demand_recall": 0.825,
+      "fraud_catch": {
+        "precision": 0.8333,
+        "recall": 0.875,
+        "f1": 0.8537,
+        "counts": {
+          "TP": 35,
+          "FP": 7,
+          "TN": 102,
+          "FN": 5
+        },
+        "cost": 32.0
+      },
+      "evaluation": {
+        "labels": [
+          "normal",
+          "genuine_demand",
+          "fraud_attack"
+        ],
+        "confusion_matrix": [
+          [
+            69,
+            0,
+            0
+          ],
+          [
+            0,
+            33,
+            7
+          ],
+          [
+            1,
+            4,
+            35
+          ]
+        ],
+        "classification_report": {
+          "normal": {
+            "precision": 0.9857142857142858,
+            "recall": 1.0,
+            "f1-score": 0.9928057553956835,
+            "support": 69.0
+          },
+          "genuine_demand": {
+            "precision": 0.8918918918918919,
+            "recall": 0.825,
+            "f1-score": 0.8571428571428571,
+            "support": 40.0
+          },
+          "fraud_attack": {
+            "precision": 0.8333333333333334,
+            "recall": 0.875,
+            "f1-score": 0.8536585365853658,
+            "support": 40.0
+          },
+          "accuracy": 0.9194630872483222,
+          "macro avg": {
+            "precision": 0.9036465036465037,
+            "recall": 0.9,
+            "f1-score": 0.9012023830413022,
+            "support": 149.0
+          },
+          "weighted avg": {
+            "precision": 0.919619427673119,
+            "recall": 0.9194630872483222,
+            "f1-score": 0.919031227325041,
+            "support": 149.0
+          }
+        }
+      }
+    },
+    "gradient_boosting": {
+      "label": "Gradient Boosting",
+      "accuracy": 0.9195,
+      "fraud_precision": 0.8043,
+      "fraud_recall": 0.925,
+      "fraud_f1": 0.8605,
+      "genuine_demand_recall": 0.775,
+      "fraud_catch": {
+        "precision": 0.8043,
+        "recall": 0.925,
+        "f1": 0.8605,
+        "counts": {
+          "TP": 37,
+          "FP": 9,
+          "TN": 100,
+          "FN": 3
+        },
+        "cost": 24.0
+      },
+      "evaluation": {
+        "labels": [
+          "normal",
+          "genuine_demand",
+          "fraud_attack"
+        ],
+        "confusion_matrix": [
+          [
+            69,
+            0,
+            0
+          ],
+          [
+            0,
+            31,
+            9
+          ],
+          [
+            0,
+            3,
+            37
+          ]
+        ],
+        "classification_report": {
+          "normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 69.0
+          },
+          "genuine_demand": {
+            "precision": 0.9117647058823529,
+            "recall": 0.775,
+            "f1-score": 0.8378378378378378,
+            "support": 40.0
+          },
+          "fraud_attack": {
+            "precision": 0.8043478260869565,
+            "recall": 0.925,
+            "f1-score": 0.8604651162790697,
+            "support": 40.0
+          },
+          "accuracy": 0.9194630872483222,
+          "macro avg": {
+            "precision": 0.9053708439897697,
+            "recall": 0.9,
+            "f1-score": 0.8994343180389691,
+            "support": 149.0
+          },
+          "weighted avg": {
+            "precision": 0.9237885991863919,
+            "recall": 0.9194630872483222,
+            "f1-score": 0.9190075044609147,
+            "support": 149.0
+          }
+        }
+      }
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "accuracy": 0.9262,
+      "fraud_precision": 0.8372,
+      "fraud_recall": 0.9,
+      "fraud_f1": 0.8675,
+      "genuine_demand_recall": 0.825,
+      "fraud_catch": {
+        "precision": 0.8372,
+        "recall": 0.9,
+        "f1": 0.8675,
+        "counts": {
+          "TP": 36,
+          "FP": 7,
+          "TN": 102,
+          "FN": 4
+        },
+        "cost": 27.0
+      },
+      "evaluation": {
+        "labels": [
+          "normal",
+          "genuine_demand",
+          "fraud_attack"
+        ],
+        "confusion_matrix": [
+          [
+            69,
+            0,
+            0
+          ],
+          [
+            0,
+            33,
+            7
+          ],
+          [
+            0,
+            4,
+            36
+          ]
+        ],
+        "classification_report": {
+          "normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 69.0
+          },
+          "genuine_demand": {
+            "precision": 0.8918918918918919,
+            "recall": 0.825,
+            "f1-score": 0.8571428571428571,
+            "support": 40.0
+          },
+          "fraud_attack": {
+            "precision": 0.8372093023255814,
+            "recall": 0.9,
+            "f1-score": 0.8674698795180723,
+            "support": 40.0
+          },
+          "accuracy": 0.9261744966442953,
+          "macro avg": {
+            "precision": 0.909700398072491,
+            "recall": 0.9083333333333333,
+            "f1-score": 0.9082042455536432,
+            "support": 149.0
+          },
+          "weighted avg": {
+            "precision": 0.9272754883805298,
+            "recall": 0.9261744966442953,
+            "f1-score": 0.9260705333317931,
+            "support": 149.0
+          }
+        }
+      }
+    }
+  }
+}

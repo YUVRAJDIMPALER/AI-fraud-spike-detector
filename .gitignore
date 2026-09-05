@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+!docker/.env.example
+
+# Jupyter and local tooling
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+
+# Generated model artifacts
+*.pkl
+*.joblib
+
+# Local data files
+# PaySim and the augmented/simulated files should be downloaded or generated locally.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local output and logs
+*.log
+*.tmp
+*.bak
+*.sqlite
+*.db
+evaluate/*.png
+
+# Operating system files
+.DS_Store
+Thumbs.db

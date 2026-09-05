@@ -1,0 +1,29 @@
+{
+  "default": "xgboost",
+  "models": {
+    "random_forest": {
+      "label": "Random Forest",
+      "accuracy": 0.9195,
+      "fraud_precision": 0.8333,
+      "fraud_recall": 0.875,
+      "fraud_f1": 0.8537,
+      "genuine_demand_recall": 0.825
+    },
+    "gradient_boosting": {
+      "label": "Gradient Boosting",
+      "accuracy": 0.9195,
+      "fraud_precision": 0.8043,
+      "fraud_recall": 0.925,
+      "fraud_f1": 0.8605,
+      "genuine_demand_recall": 0.775
+    },
+    "xgboost": {
+      "label": "XGBoost",
+      "accuracy": 0.9262,
+      "fraud_precision": 0.8372,
+      "fraud_recall": 0.9,
+      "fraud_f1": 0.8675,
+      "genuine_demand_recall": 0.825
+    }
+  }
+}
